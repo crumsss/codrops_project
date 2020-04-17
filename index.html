@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tate Modern Exhibition</title>
+	<meta name="description" content="A menu with a css-only marquee hover effect" />
+	<meta name="keywords" content="marquee, css, animation, loop, infinite, hover, menu, navigation" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap" rel="stylesheet">
+	<script>
+	document.documentElement.className = "js";
+	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+	supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+	<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+</head>
+
+<body class="demo-1">
+	<main>
+		<div class="frame">
+			<div class="frame__title-wrap">
+				<h1 class="frame__title">Tate Modern</h1>
+				<p class="frame__info">London</p>
+				<img class="logo" src="img/logo.png" alt="tatelogo"/>
+			</div>
+			<div class="frame__links">
+				<a href="https://tympanus.net/codrops/?p=48796"></a>
+				<a href="https://github.com/codrops/CSSMarqueeMenu/"></a>
+			</div>
+		</div>
+		<nav class="menu">
+			<div class="menu__item">
+				<a class="menu__item-link">Dora Maurer</a>
+				<img class="menu__item-img" src="img/1.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Dora Maurer</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Steeve McQueen</a>
+				<img class="menu__item-img" src="img/2.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Steeve McQueen</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Andy Warhol</a>
+				<img class="menu__item-img" src="img/3.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Andy Warhol</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Yayoi Kusama</a>
+				<img class="menu__item-img" src="img/4.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Yayoi Kusama</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Bruce Nauman</a>
+				<img class="menu__item-img" src="img/5.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Bruce Nauman</span>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="frame">
+			<p>2019-2020</p>
+		</div>
+	</main>
+	<!--script src="https://tympanus.net/codrops/adpacks/cda.js"></script-->
+</body>
+
+</html>
